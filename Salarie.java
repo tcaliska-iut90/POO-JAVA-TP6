@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Salarie extends Personne{
     private String employeur;
     private String numeroSecu;
@@ -31,4 +33,13 @@ public class Salarie extends Personne{
         return this.numeroSecu;
     }
 
+    public void init(){
+        super.init();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrez le nom de l'employeur");
+        this.employeur = scanner.nextLine();
+
+        System.out.println("Entrez le nom de l'employeur");
+        this.numeroSecu = scanner.nextLine();
+    }
 }
