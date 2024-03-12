@@ -16,4 +16,6 @@ public class Salarie extends Personne{
         this.employeur = unEmployeur;
         this.numeroSecu = unNumeroSecu;
     }
+
+
 }
