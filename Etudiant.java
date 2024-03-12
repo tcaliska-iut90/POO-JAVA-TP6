@@ -1,4 +1,5 @@
 import java.util.Objects;
+import java.util.Scanner;
 
 public class Etudiant extends Personne{
     private String faculte;
@@ -25,5 +26,25 @@ public class Etudiant extends Personne{
         return faculte.equals(etudiant.faculte) && numeroEtudiant.equals(etudiant.numeroEtudiant);
     }
 
+    public String getFaculte(){
+        return this.faculte;
+    }
 
+    public String getNumeroEtudiant(){
+        return this.numeroEtudiant;
+    }
+
+    public void init(){
+        super.init();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Entrez le nom de la faculte");
+        this.faculte = scanner.nextLine();
+
+        System.out.println("Entrez le numeroEtudiant");
+        this.numeroEtudiant = scanner.nextLine();
+    }
+
+    public String toString(){
+        return super.toString() + faculte + numeroEtudiant;
+    }
 }
