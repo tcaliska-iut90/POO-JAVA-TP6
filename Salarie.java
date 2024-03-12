@@ -18,6 +18,7 @@ public class Salarie extends Personne{
         this.employeur = unEmployeur;
         this.numeroSecu = unNumeroSecu;}
 
+    @Override
     public boolean equals(Object o){
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -41,5 +42,9 @@ public class Salarie extends Personne{
 
         System.out.println("Entrez le nom de l'employeur");
         this.numeroSecu = scanner.nextLine();
+    }
+    @Override
+    public String toString(){
+        return super.toString() + employeur + numeroSecu;
     }
 }
