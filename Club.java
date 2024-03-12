@@ -1,6 +1,6 @@
 public class Club {
     private String nomClub;
-    private String[] adherents;
+    private Personne[] adherents;
     public Club(){}
     public Club(Club c){
         this.nomClub = c.nomClub;
