@@ -40,7 +40,7 @@ public class Salarie extends Personne{
         System.out.println("Entrez le nom de l'employeur");
         this.employeur = scanner.nextLine();
 
-        System.out.println("Entrez le nom de l'employeur");
+        System.out.println("Entrez le numeroSecu de l'employeur");
         this.numeroSecu = scanner.nextLine();
     }
     @Override
